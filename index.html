@@ -355,6 +355,53 @@
       font-weight: 400;
       letter-spacing: 0.04em;
     }
+
+    /* ── Responsive Design ── */
+    @media (max-width: 800px), (max-height: 1050px) {
+      body {
+        background: #ffffff;
+      }
+      .ipad {
+        width: 100vw;
+        height: 100vh;
+        border-radius: 0;
+        box-shadow: none;
+      }
+      .ipad::before {
+        display: none;
+      }
+      .screen-content {
+        padding: 40px 24px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .main-title {
+        font-size: 32px;
+      }
+      .sub-title {
+        font-size: 15px;
+        margin-bottom: 40px;
+      }
+      .divider {
+        margin-bottom: 40px;
+      }
+      .header-icon {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 20px;
+      }
+      .header-icon svg {
+        width: 30px;
+        height: 30px;
+      }
+      .prompt-bubble {
+        padding: 24px 20px;
+      }
+      .prompt-text {
+        font-size: 17px;
+      }
+    }
   </style>
 </head>
 <body>
